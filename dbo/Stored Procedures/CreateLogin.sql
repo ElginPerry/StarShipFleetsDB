@@ -3,7 +3,7 @@
 -- Create date: 5/6/2020
 -- Description:	Create Login
 -- =============================================
-CREATE PROCEDURE CreateLogin
+CREATE PROCEDURE [dbo].[CreateLogin]
 	@UserEmail nvarchar(100),
 	@Password nvarchar(50)
 AS
@@ -24,7 +24,8 @@ BEGIN
 			,null
 			,GetDate()
 			,null
-			,GetDate()	
+			,GetDate()
+			,0	
 		)
 
 		SELECT UserID

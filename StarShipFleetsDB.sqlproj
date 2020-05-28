@@ -89,5 +89,9 @@
     <Build Include="dbo\Stored Procedures\CleanPlanet.sql" />
     <Build Include="dbo\Stored Procedures\AddPlanetBuilding.sql" />
     <Build Include="dbo\Stored Procedures\AddBuildingQue.sql" />
+    <Build Include="dbo\Tables\Technology.sql" />
+    <Build Include="dbo\Tables\PlayerTechnology.sql" />
+    <Build Include="dbo\Stored Procedures\GetResearchTypes.sql" />
+    <Build Include="dbo\Stored Procedures\AddPlayerTech.sql" />
   </ItemGroup>
 </Project>

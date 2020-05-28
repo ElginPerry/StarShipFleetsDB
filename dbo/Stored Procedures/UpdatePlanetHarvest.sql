@@ -14,7 +14,7 @@ BEGIN
 	SELECT @NewHarvest = dateadd(MINUTE, 1 ,GETUTCDATE())
 Update dbo.PlanetDetail
 	SET 
-		Materials=Materials+@Materials,
+		Materials=Round(Materials+@Materials,2),
 		Population=Population+@Population,
 		LastHarvest= @NewHarvest
 	WHERE PlanetID = @PlanetID

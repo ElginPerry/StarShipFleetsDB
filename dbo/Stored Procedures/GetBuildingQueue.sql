@@ -4,7 +4,7 @@
 -- Description:	Get Building Queue
 -- =============================================
 CREATE PROCEDURE [dbo].[GetBuildingQueue] 
-	@planetID int = 308
+	@planetID int 
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -16,9 +16,12 @@ BEGIN
 		,q.[Seconds]
 		,q.[CompletetionDate]
 		,q.[DateQued]
+		,q.Type
 		,b.Name as BuildingName
+		,t.Name as TechName
 	FROM [dbo].[BuildingQue] q
-	JOIN dbo.Buildings b ON b.BuildingID = q.BuildingID
-	WHERE PlanetID = @planetID
+	LEFT JOIN dbo.Buildings b ON b.BuildingID = q.BuildingID
+	LEFT JOIN dbo.Technology t on t.TechnologyID = q.BuildingID
+	WHERE q.PlanetID = @planetID  
 
 END

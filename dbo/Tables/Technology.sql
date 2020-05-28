@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Technology] (
+    [TechnologyID]   INT          IDENTITY (1, 1) NOT NULL,
+    [Name]           VARCHAR (50) NULL,
+    [SortOrder]      INT          NULL,
+    [TechnologyCost] FLOAT (53)   NULL,
+    [Energy]         FLOAT (53)   NULL,
+    [Food]           FLOAT (53)   NULL,
+    [Research]       FLOAT (53)   NULL,
+    [Mining]         FLOAT (53)   NULL,
+    [Infrastructure] FLOAT (53)   NULL,
+    [PopulationMax]  FLOAT (53)   NULL,
+    [Military]       FLOAT (53)   NULL,
+    [Laser]          FLOAT (53)   NULL,
+    [Missile]        FLOAT (53)   NULL,
+    [Plasma]         FLOAT (53)   NULL,
+    [Shields]        FLOAT (53)   NULL,
+    [Armor]          FLOAT (53)   NULL,
+    [Weapons]        FLOAT (53)   NULL,
+    [BodyArmor]      FLOAT (53)   NULL,
+    [TechID]         INT          NULL,
+    [TechLevel]      INT          NULL,
+    [BuildingID]     INT          NULL,
+    [BuildingLevel]  INT          NULL
+);
+

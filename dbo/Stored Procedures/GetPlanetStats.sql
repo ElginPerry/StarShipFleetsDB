@@ -15,6 +15,8 @@ BEGIN
 		,sum(pb.BldLevel*b.Mining*pt.Mining) as Mining
 		,sum(pb.BldLevel*b.PopulationMax) as PopulationMax
 		,sum(pb.BldLevel*b.Infrastructure*pt.Infrastructure) as Infrastructure
+		,sum(pb.BldLevel*b.Military) as Military
+		,sum(pb.BldLevel*b.TradeRoutes) as TradeRoutes
 	FROM dbo.PlanetBuilding pb
 	JOIN dbo.Planets p on p.PlanetID = pb.PlanetID
 	JOIN dbo.PlanetTypes pt on pt.TextureNo = p.PlanetType

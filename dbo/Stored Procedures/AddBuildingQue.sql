@@ -8,7 +8,9 @@ CREATE PROCEDURE [dbo].[AddBuildingQue]
 	@PlanetID int,
 	@UserID int,
 	@Seconds float,
-	@CompletetionDate datetime
+	@CompletetionDate datetime,
+	@Type int
+
 AS
 BEGIN
 	INSERT INTO [dbo].[BuildingQue]
@@ -17,6 +19,7 @@ BEGIN
 		,[UserID]
 		,[Seconds]
 		,[CompletetionDate]
+		,[Type]
 		)
 	 VALUES
 		(@BuildingID
@@ -24,5 +27,6 @@ BEGIN
 		,@UserID
 		,@Seconds
 		,@CompletetionDate
+		,@Type
 		)
 END
