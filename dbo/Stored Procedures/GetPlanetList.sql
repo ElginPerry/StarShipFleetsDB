@@ -3,8 +3,8 @@
 -- Create date: 5/15/2020
 -- Description:	Get Planet
 -- =============================================
-CREATE PROCEDURE [dbo].[GetPlanetDetailbyID] 
-	@PlanetID int, @UserID int = null
+CREATE PROCEDURE [dbo].[GetPlanetList] 
+	@UserID int = null
 AS
 BEGIN
 SELECT p.[PlanetID]
@@ -37,8 +37,8 @@ SELECT p.[PlanetID]
 	  ,pt.TypeName
   FROM [dbo].[Planets] p
   LEFT JOIN dbo.Users u ON u.UserID = p.Owner
-  LEFT JOIN dbo.PlanetDetail pd ON pd.PlanetID = p.PlanetID AND p.Owner = @UserID
+  LEFT JOIN dbo.PlanetDetail pd ON pd.PlanetID = p.PlanetID 
   JOIN dbo.PlanetTypes pt ON pt.TextureNo = p.PlanetType
-  WHERE p.PlanetID = @PlanetID
+  WHERE p.Owner = @UserID
 
 END

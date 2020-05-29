@@ -6,7 +6,8 @@
 CREATE PROCEDURE [dbo].[UpdatePlanetHarvest]
 	@PlanetID int,
 	@Materials float,
-	@Population int
+	@Population int,
+	@Military int
 AS
 BEGIN
 	DECLARE @NewHarvest datetime
@@ -16,6 +17,7 @@ Update dbo.PlanetDetail
 	SET 
 		Materials=Round(Materials+@Materials,2),
 		Population=Population+@Population,
+		Military=Military+@Military,
 		LastHarvest= @NewHarvest
 	WHERE PlanetID = @PlanetID
 	

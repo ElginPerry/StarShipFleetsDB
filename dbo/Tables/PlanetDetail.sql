@@ -4,6 +4,7 @@
     [PlanetID]               INT        NOT NULL,
     [Materials]              FLOAT (53) CONSTRAINT [DF_PlanetDetail_Materials] DEFAULT ((0)) NOT NULL,
     [Population]             INT        NULL,
+    [Military]               INT        NULL,
     [FoodPop]                INT        CONSTRAINT [DF_PlanetDetail_FoodPop] DEFAULT ((0)) NULL,
     [EnergyPop]              INT        CONSTRAINT [DF_PlanetDetail_EnergyPop] DEFAULT ((0)) NOT NULL,
     [ResearchPop]            INT        CONSTRAINT [DF_PlanetDetail_ResearchPop] DEFAULT ((0)) NOT NULL,
@@ -13,4 +14,6 @@
     [LastHarvest]            DATETIME   CONSTRAINT [DF_PlanetDetail_LastHarvest] DEFAULT (getdate()) NULL,
     [LastPopChange]          DATETIME   NULL
 );
+
+
 

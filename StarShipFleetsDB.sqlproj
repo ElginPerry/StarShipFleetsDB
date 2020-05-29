@@ -77,8 +77,6 @@
     <Build Include="dbo\Stored Procedures\UpdatePlanetHarvest.sql" />
     <Build Include="dbo\Stored Procedures\RemoveBuildingQueue.sql" />
     <Build Include="dbo\Stored Procedures\GetPlanetTypeDetail.sql" />
-    <Build Include="dbo\Stored Procedures\GetPlanetStatsOld.sql" />
-    <Build Include="dbo\Stored Procedures\GetPlanetStats.sql" />
     <Build Include="dbo\Stored Procedures\GetPlanetDetailbyID.sql" />
     <Build Include="dbo\Stored Procedures\GetGalaxy.sql" />
     <Build Include="dbo\Stored Procedures\GetBuildingTypes.sql" />
@@ -93,5 +91,18 @@
     <Build Include="dbo\Tables\PlayerTechnology.sql" />
     <Build Include="dbo\Stored Procedures\GetResearchTypes.sql" />
     <Build Include="dbo\Stored Procedures\AddPlayerTech.sql" />
+    <Build Include="dbo\Tables\ShipPods.sql" />
+    <Build Include="dbo\Tables\ShipDesignsPods.sql" />
+    <Build Include="dbo\Tables\ShipDesigns.sql" />
+    <Build Include="dbo\Tables\Hulls.sql" />
+    <Build Include="dbo\Stored Procedures\RemoveShipDesigns.sql" />
+    <Build Include="dbo\Stored Procedures\GetShipPods.sql" />
+    <Build Include="dbo\Stored Procedures\GetShipHulls.sql" />
+    <Build Include="dbo\Stored Procedures\GetShipDesignSummary.sql" />
+    <Build Include="dbo\Stored Procedures\GetShipDesignDetails.sql" />
+    <Build Include="dbo\Stored Procedures\GetShipDesignbyUser.sql" />
+    <Build Include="dbo\Stored Procedures\GetPlanetList.sql" />
+    <Build Include="dbo\Stored Procedures\AddShipDesigns.sql" />
+    <Build Include="dbo\Stored Procedures\AddShipDesignPods.sql" />
   </ItemGroup>
 </Project>
