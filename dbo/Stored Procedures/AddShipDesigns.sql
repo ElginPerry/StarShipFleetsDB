@@ -7,15 +7,18 @@ CREATE PROCEDURE [dbo].[AddShipDesigns]
 	@UserID int
 	,@DesignName varchar(50)
 	,@HullID int
+	,@ShipYardLevel int
 AS
 BEGIN
 
 INSERT INTO [dbo].[ShipDesigns]
            ([UserID]
            ,[DesignName]
-           ,[HullID])
+           ,[HullID]
+		   ,ShipYardLevel)
      VALUES
            (@UserID 
 			,@DesignName 
-			,@HullID ) 
+			,@HullID
+			,@ShipYardLevel ) 
 END

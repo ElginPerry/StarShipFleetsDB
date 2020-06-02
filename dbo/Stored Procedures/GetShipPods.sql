@@ -11,6 +11,7 @@ BEGIN
       ,[PodName]
       ,[SortOrder]
       ,[MaterialCost]
+	  ,[Mass]
       ,[Energy]
       ,[EnergyCost]
 	  ,[MilitaryCost]
@@ -19,11 +20,13 @@ BEGIN
       ,[Plasma]
       ,[Shields]
       ,[Armor]
+	  ,[Bays]
       ,[Movement]
       ,[TechID]
       ,[TechLevel]
       ,[BuildingID]
       ,[BuildingLevel]
   FROM [dbo].[ShipPods]
+  Order by SortOrder
  
 END

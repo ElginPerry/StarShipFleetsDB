@@ -19,7 +19,8 @@ BEGIN
 		sum(sp.Missile*sdp.NumofPods) as Missile,
 		sum(sp.Movement*sdp.NumofPods) as Movement,
 		sum(sp.Plasma*sdp.NumofPods) as Plasma,
-		sum(sp.Shields*sdp.NumofPods) as Shields				
+		sum(sp.Shields*sdp.NumofPods) as Shields,
+		sum(sp.Bays*sdp.NumofPods) as Bays				
 	FROM dbo.ShipDesigns sd
 	JOIN dbo.ShipDesignsPods sdp ON sdp.ShipDesignID = sd.ShipDesignID
 	JOIN dbo.ShipPods sp ON sp.ShipPodID=sdp.ShipDesignPodsID

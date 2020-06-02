@@ -1,10 +1,10 @@
 ﻿-- =============================================
 -- Author:		Elgin Perry
 -- Create date: 5/20/2020
--- Description:	Create Galaxy
+-- Description:	[Get Building Types]
 -- =============================================
 CREATE PROCEDURE [dbo].[GetBuildingTypes] 
-	@PlanetID int = 308
+	@PlanetID int = null
 AS
 BEGIN
 	SET NOCOUNT ON;

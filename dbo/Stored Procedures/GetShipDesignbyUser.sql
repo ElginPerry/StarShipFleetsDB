@@ -11,7 +11,8 @@ BEGIN
 		sd.ShipDesignID,
 		sd.UserID,
 		sd.DesignName,
-		sd.HullID,	
+		sd.HullID,
+		sd.ShipYardLevel,
 		h.HullName	
 	FROM dbo.ShipDesigns sd
 	JOIN dbo.Hulls h ON h.HullID = sd.HullID

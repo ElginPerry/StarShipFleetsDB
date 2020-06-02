@@ -18,5 +18,6 @@ SELECT [HullID]
       ,[BuildingID]
       ,[BuildingLevel]
   FROM [dbo].[Hulls]
+  Order by SortOrder
  
 END

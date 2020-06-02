@@ -18,13 +18,15 @@ BEGIN
 		sp.Armor,
 		sp.Energy,
 		sp.EnergyCost,
+		sp.Mass,
 		sp.MilitaryCost,
 		sp.Laser,
 		sp.MaterialCost,
 		sp.Missile,
 		sp.Movement,
 		sp.Plasma,
-		sp.Shields				
+		sp.Shields,
+		sp.Bays				
 	FROM dbo.ShipDesigns sd
 	JOIN dbo.ShipDesignsPods sdp ON sdp.ShipDesignID = sd.ShipDesignID
 	JOIN dbo.ShipPods sp ON sp.ShipPodID=sdp.ShipDesignPodsID
