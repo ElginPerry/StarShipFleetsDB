@@ -6,13 +6,15 @@
 CREATE PROCEDURE [dbo].[UpdatePopAndMats]
 	@PlanetID int,
 	@Materials float,
-	@Population int
+	@Population int,
+	@Military int
 AS
 BEGIN
 	Update dbo.PlanetDetail
 	SET 
 		Materials = @Materials
 		,Population = @Population
+		,Military = @Military
 	WHERE PlanetID = @PlanetID
 	
 END

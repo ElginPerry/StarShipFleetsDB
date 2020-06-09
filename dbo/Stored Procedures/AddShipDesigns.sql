@@ -8,17 +8,56 @@ CREATE PROCEDURE [dbo].[AddShipDesigns]
 	,@DesignName varchar(50)
 	,@HullID int
 	,@ShipYardLevel int
+	,@MaterialCost float
+    ,@MilitaryCost int
+	,@Energy float
+	,@EnergyCost float
+    ,@Laser float
+    ,@Missile float
+    ,@Plasma float
+    ,@Shields float
+    ,@Armor float
+    ,@Bays float
+    ,@Movement float
 AS
 BEGIN
 
 INSERT INTO [dbo].[ShipDesigns]
-           ([UserID]
+           (
+		   [UserID]
            ,[DesignName]
            ,[HullID]
-		   ,ShipYardLevel)
+           ,[ShipYardLevel]
+           ,[MaterialCost]
+           ,[MilitaryCost]
+		   ,[Energy]
+		   ,[EnergyCost]
+           ,[Laser]
+           ,[Missile]
+           ,[Plasma]
+           ,[Shields]
+           ,[Armor]
+           ,[Bays]
+           ,[Movement]
+		   )
      VALUES
-           (@UserID 
+           (	
+			@UserID 
 			,@DesignName 
-			,@HullID
-			,@ShipYardLevel ) 
+			,@HullID 
+			,@ShipYardLevel 
+			,@MaterialCost 
+			,@MilitaryCost 
+			,@Energy
+			,@EnergyCost
+			,@Laser 
+			,@Missile 
+			,@Plasma 
+			,@Shields 
+			,@Armor 
+			,@Bays 
+			,@Movement 
+			)
+
+	SELECT CAST(SCOPE_IDENTITY() AS INT) AS [ShipDesignID];
 END

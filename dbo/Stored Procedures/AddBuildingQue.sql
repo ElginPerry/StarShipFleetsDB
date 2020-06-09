@@ -8,8 +8,10 @@ CREATE PROCEDURE [dbo].[AddBuildingQue]
 	@PlanetID int,
 	@UserID int,
 	@Seconds float,
+	@MaterialCost int,
 	@CompletetionDate datetime,
-	@Type int
+	@Type int,
+	@UpgradeDesignID int = null
 
 AS
 BEGIN
@@ -17,16 +19,20 @@ BEGIN
 		([BuildingID]
 		,[PlanetID]
 		,[UserID]
+		,[MaterialCost]
 		,[Seconds]
 		,[CompletetionDate]
 		,[Type]
+		,[UpgradeDesignID]
 		)
 	 VALUES
 		(@BuildingID
 		,@PlanetID
 		,@UserID
+		,@MaterialCost
 		,@Seconds
 		,@CompletetionDate
 		,@Type
+		,@UpgradeDesignID
 		)
 END

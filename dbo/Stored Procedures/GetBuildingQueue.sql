@@ -19,9 +19,11 @@ BEGIN
 		,q.Type
 		,b.Name as BuildingName
 		,t.Name as TechName
+		,s.DesignName as ShipName
 	FROM [dbo].[BuildingQue] q
 	LEFT JOIN dbo.Buildings b ON b.BuildingID = q.BuildingID
 	LEFT JOIN dbo.Technology t on t.TechnologyID = q.BuildingID
+	LEFT JOIN dbo.ShipDesigns s on s.ShipDesignID = q.BuildingID
 	WHERE q.UserID = @UserID  
 
 END

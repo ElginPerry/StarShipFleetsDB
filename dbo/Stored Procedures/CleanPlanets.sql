@@ -3,7 +3,7 @@
 -- Create date: 5/6/2020
 -- Description:	Create Galaxy
 -- =============================================
-CREATE PROCEDURE [dbo].[CleanPlanet]
+CREATE PROCEDURE [dbo].[CleanPlanets]
 AS
 BEGIN
 	DROP TABLE Planets

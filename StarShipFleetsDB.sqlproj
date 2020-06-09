@@ -84,7 +84,6 @@
     <Build Include="dbo\Stored Procedures\CreateLogin.sql" />
     <Build Include="dbo\Stored Procedures\CreateGalaxy.sql" />
     <Build Include="dbo\Stored Procedures\ColonizePlanet.sql" />
-    <Build Include="dbo\Stored Procedures\CleanPlanet.sql" />
     <Build Include="dbo\Stored Procedures\AddPlanetBuilding.sql" />
     <Build Include="dbo\Stored Procedures\AddBuildingQue.sql" />
     <Build Include="dbo\Tables\Technology.sql" />
@@ -104,5 +103,12 @@
     <Build Include="dbo\Stored Procedures\GetPlanetList.sql" />
     <Build Include="dbo\Stored Procedures\AddShipDesigns.sql" />
     <Build Include="dbo\Stored Procedures\AddShipDesignPods.sql" />
+    <Build Include="dbo\Tables\Fleets.sql" />
+    <Build Include="dbo\Tables\FleetDetails.sql" />
+    <Build Include="dbo\Stored Procedures\GetFleetShips.sql" />
+    <Build Include="dbo\Stored Procedures\GetFleetsbyUser.sql" />
+    <Build Include="dbo\Stored Procedures\CleanPlanets.sql" />
+    <Build Include="dbo\Stored Procedures\AddFleetDetails.sql" />
+    <Build Include="dbo\Stored Procedures\AddFleet.sql" />
   </ItemGroup>
 </Project>
