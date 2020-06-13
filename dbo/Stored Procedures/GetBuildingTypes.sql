@@ -37,9 +37,9 @@ BEGIN
 		,isnull(pb.BldLevel,0) + isnull(BdQue.cnt,0) as QuedLevel
 		,b.TechID
 		,b.TechLevel
+		,b.ShowFlag
 	FROM [dbo].[Buildings] b
 	LEFT JOIN dbo.PlanetBuilding pb on pb.BuildingID = b.BuildingID AND pb.PlanetID = @PlanetID
-	LEFT JOIN BdQue on BdQue.BuildingID = b.BuildingID 
-	WHERE ShowFlag = 1
+	LEFT JOIN BdQue on BdQue.BuildingID = b.BuildingID
 	ORDER BY b.SortOrder
 END

@@ -14,6 +14,7 @@ SELECT p.[PlanetID]
       ,p.[Sector]
 	  ,p.[System]
       ,p.[xSysPosition]
+      ,p.[ySysPosition]
       ,p.[Moon]
       ,p.[Owner]
 	  ,u.UserEmail

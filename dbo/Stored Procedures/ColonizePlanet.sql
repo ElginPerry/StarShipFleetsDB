@@ -20,6 +20,7 @@ BEGIN
       [PlanetID]
       ,[Materials]
       ,[Population]
+	  ,[Military]
       ,[FoodPop]
       ,[EnergyPop]
       ,[ResearchPop]
@@ -33,6 +34,7 @@ BEGIN
 		@PlanetID,
 		@Materials,
 		@Population,
+		5,
 		60,
 		0,
 		0,

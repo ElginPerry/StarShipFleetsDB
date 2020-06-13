@@ -5,6 +5,9 @@
     [PlanetID]    INT          NULL,
     [Status]      INT          CONSTRAINT [DF_Fleets_Status] DEFAULT ((0)) NULL,
     [Destination] INT          NULL,
+    [Start]       DATETIME     NULL,
     [Arrival]     DATETIME     NULL
 );
+
+
 

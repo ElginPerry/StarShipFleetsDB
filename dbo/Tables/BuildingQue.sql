@@ -8,8 +8,10 @@
     [CompletetionDate] DATETIME   NULL,
     [DateQued]         DATETIME   CONSTRAINT [DF_BuildingQue_DateQued] DEFAULT (getdate()) NULL,
     [Type]             INT        NULL,
-    [UpgradeDesignID]  INT        NULL
+    [Movement]         FLOAT (53) NULL
 );
+
+
 
 
 

@@ -3,7 +3,7 @@
 -- Create date: 5/6/2020
 -- Description:	User Login
 -- =============================================
-CREATE PROCEDURE UserLogin
+CREATE PROCEDURE [dbo].[UserLogin]
 	@UserEmail nvarchar(100),
 	@Password nvarchar(50)
 AS
@@ -28,6 +28,7 @@ BEGIN
 		,LastLogin
 		,IPAddress
 		,Joined
+		,Banned
 		FROM dbo.Users
 		WHERE UserID = @USERID
 	END

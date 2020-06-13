@@ -11,7 +11,7 @@ CREATE PROCEDURE [dbo].[AddBuildingQue]
 	@MaterialCost int,
 	@CompletetionDate datetime,
 	@Type int,
-	@UpgradeDesignID int = null
+	@Movement float = null
 
 AS
 BEGIN
@@ -23,7 +23,7 @@ BEGIN
 		,[Seconds]
 		,[CompletetionDate]
 		,[Type]
-		,[UpgradeDesignID]
+		,[Movement]
 		)
 	 VALUES
 		(@BuildingID
@@ -33,6 +33,6 @@ BEGIN
 		,@Seconds
 		,@CompletetionDate
 		,@Type
-		,@UpgradeDesignID
+		,@Movement
 		)
 END

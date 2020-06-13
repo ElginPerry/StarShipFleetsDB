@@ -8,7 +8,8 @@ CREATE PROCEDURE [dbo].[AddFleetDetails]
 	@FleetID int,
 	@DesignID int,
 	@ActualNumber int,
-	@EffectiveNumber float
+	@EffectiveNumber float,
+	@Movement float
 AS
 BEGIN
 
@@ -21,6 +22,8 @@ BEGIN
 		UPDATE dbo.FleetDetails
 		SET ActualNumber = ActualNumber+@ActualNumber,
 			EffectiveNumber = EffectiveNumber+@EffectiveNumber
+		WHERE DesignID = @DesignID
+		AND FleetID = @FleetID
 	END
 	ELSE
 	BEGIN	
@@ -29,13 +32,15 @@ BEGIN
 			,[DesignID]
 			,[ActualNumber]
 			,[EffectiveNumber]
-			,[UserID])
+			,[UserID]
+			,[Movement])
 		VALUES
 			(@FleetID,
 			@DesignID,
 			@ActualNumber,
 			@EffectiveNumber,
-			@UserID)
+			@UserID,
+			@Movement)
 	END
 
 END

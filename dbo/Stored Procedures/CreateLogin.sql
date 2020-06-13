@@ -21,10 +21,10 @@ BEGIN
 			@UserEmail
 			,@Password
 			,0
+			,GetUTCDate()
+			,GetUTCDate()
 			,null
-			,GetDate()
-			,null
-			,GetDate()
+			,GetUTCDate()
 			,0	
 		)
 
@@ -36,6 +36,7 @@ BEGIN
 		,LastLogin
 		,IPAddress
 		,Joined
+		,Banned
 		FROM dbo.Users
 		WHERE UserEmail = @UserEmail
 	END

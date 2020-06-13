@@ -4,6 +4,9 @@
     [DesignID]        INT        NULL,
     [ActualNumber]    INT        NULL,
     [EffectiveNumber] FLOAT (53) NULL,
-    [UserID]          INT        NULL
+    [UserID]          INT        NULL,
+    [Movement]        FLOAT (53) NULL
 );
+
+
 

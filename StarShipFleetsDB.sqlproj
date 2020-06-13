@@ -110,5 +110,9 @@
     <Build Include="dbo\Stored Procedures\CleanPlanets.sql" />
     <Build Include="dbo\Stored Procedures\AddFleetDetails.sql" />
     <Build Include="dbo\Stored Procedures\AddFleet.sql" />
+    <Build Include="dbo\Stored Procedures\SetMoveFleet.sql" />
+    <Build Include="dbo\Stored Procedures\GetFirstPlanet.sql" />
+    <Build Include="dbo\Stored Procedures\FleetMoveComplete.sql" />
+    <Build Include="dbo\Stored Procedures\FleetMoveCancel.sql" />
   </ItemGroup>
 </Project>

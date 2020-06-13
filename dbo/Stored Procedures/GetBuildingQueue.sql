@@ -17,6 +17,7 @@ BEGIN
 		,q.[CompletetionDate]
 		,q.[DateQued]
 		,q.Type
+		,q.Movement
 		,b.Name as BuildingName
 		,t.Name as TechName
 		,s.DesignName as ShipName

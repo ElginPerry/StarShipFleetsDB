@@ -15,6 +15,7 @@ BEGIN
 		,fd.[ActualNumber]
 		,fd.[EffectiveNumber]
 		,fd.[UserID]
+		,fd.Movement
 	FROM [dbo].[FleetDetails] fd
 	JOIN dbo.ShipDesigns sd on sd.ShipDesignID = fd.DesignID
 	WHERE fd.FleetID = @FleetID

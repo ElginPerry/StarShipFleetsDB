@@ -46,4 +46,12 @@ BEGIN
 
 	Truncate TABLE dbo.PlanetBuilding
 	Truncate TABLE dbo.PlanetDetail
+	Truncate TABLE dbo.PlayerTechnology
+	Truncate TABLE dbo.ShipDesigns
+	Truncate TABLE dbo.ShipDesignsPods
+	Truncate TABLE dbo.Fleets
+	Truncate TABLE dbo.FleetDetails
+	Truncate TABLE dbo.Users
+	Truncate TABLE dbo.BuildingQue
+
 END
