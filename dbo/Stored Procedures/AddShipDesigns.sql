@@ -19,6 +19,7 @@ CREATE PROCEDURE [dbo].[AddShipDesigns]
     ,@Armor float
     ,@Bays float
     ,@Movement float
+	,@Colony int
 AS
 BEGIN
 
@@ -39,6 +40,7 @@ INSERT INTO [dbo].[ShipDesigns]
            ,[Armor]
            ,[Bays]
            ,[Movement]
+		   ,[Colony]
 		   )
      VALUES
            (	
@@ -57,6 +59,7 @@ INSERT INTO [dbo].[ShipDesigns]
 			,@Armor 
 			,@Bays 
 			,@Movement 
+			,@Colony
 			)
 
 	SELECT CAST(SCOPE_IDENTITY() AS INT) AS [ShipDesignID];

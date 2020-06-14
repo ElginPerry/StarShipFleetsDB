@@ -24,6 +24,7 @@ BEGIN
 		,sd.[Armor]
 		,sd.[Bays]
 		,sd.[Movement]
+		,sd.[Colony]
 		,h.HullName	
 	FROM dbo.ShipDesigns sd
 	JOIN dbo.Hulls h ON h.HullID = sd.HullID

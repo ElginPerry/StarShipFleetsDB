@@ -23,7 +23,8 @@ BEGIN
 		,sd.[Shields]
 		,sd.[Armor]
 		,sd.[Bays]
-		,sd.[Movement]		
+		,sd.[Movement]	
+		,sd.[Colony]	
 	FROM dbo.ShipDesigns sd
 	JOIN dbo.Hulls h ON h.HullID = sd.HullID
 	WHERE sd.ShipDesignID = @ShipDesignID

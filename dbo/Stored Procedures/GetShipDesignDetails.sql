@@ -24,6 +24,7 @@ BEGIN
 		sp.MaterialCost,
 		sp.Missile,
 		sp.Movement,
+		sp.Colony,
 		sp.Plasma,
 		sp.Shields,
 		sp.Bays				

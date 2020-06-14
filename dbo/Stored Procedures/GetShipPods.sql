@@ -22,6 +22,7 @@ BEGIN
       ,[Armor]
 	  ,[Bays]
       ,[Movement]
+	  ,[Colony]
       ,[TechID]
       ,[TechLevel]
       ,[BuildingID]

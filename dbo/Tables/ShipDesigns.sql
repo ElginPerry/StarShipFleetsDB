@@ -14,8 +14,11 @@
     [Shields]       FLOAT (53)   NULL,
     [Armor]         FLOAT (53)   NULL,
     [Bays]          FLOAT (53)   NULL,
-    [Movement]      FLOAT (53)   NULL
+    [Movement]      FLOAT (53)   NULL,
+    [Colony]        INT          NULL
 );
+
+
 
 
 
