@@ -8,6 +8,9 @@
     [TechID]        INT          NULL,
     [TechLevel]     INT          NULL,
     [BuildingID]    INT          NULL,
-    [BuildingLevel] INT          NULL
+    [BuildingLevel] INT          NULL,
+    [RequiresBay]   BIT          NULL
 );
+
+
 

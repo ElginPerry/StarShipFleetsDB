@@ -106,7 +106,6 @@
     <Build Include="dbo\Tables\Fleets.sql" />
     <Build Include="dbo\Tables\FleetDetails.sql" />
     <Build Include="dbo\Stored Procedures\GetFleetShips.sql" />
-    <Build Include="dbo\Stored Procedures\GetFleetsbyUser.sql" />
     <Build Include="dbo\Stored Procedures\CleanPlanets.sql" />
     <Build Include="dbo\Stored Procedures\AddFleetDetails.sql" />
     <Build Include="dbo\Stored Procedures\AddFleet.sql" />
@@ -114,5 +113,8 @@
     <Build Include="dbo\Stored Procedures\GetFirstPlanet.sql" />
     <Build Include="dbo\Stored Procedures\FleetMoveComplete.sql" />
     <Build Include="dbo\Stored Procedures\FleetMoveCancel.sql" />
+    <Build Include="dbo\Stored Procedures\GetPlanetFleets.sql" />
+    <Build Include="dbo\Stored Procedures\GetGalaxySystems.sql" />
+    <Build Include="dbo\Stored Procedures\GetFleets.sql" />
   </ItemGroup>
 </Project>

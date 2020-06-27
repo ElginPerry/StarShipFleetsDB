@@ -25,11 +25,19 @@ BEGIN
 	SELECT
 		@Movement = MIN(fd.Movement)
 	FROM dbo.FleetDetails fd
+	JOIN dbo.ShipDesigns sd on sd.ShipDesignID = fd.DesignID
+	JOIN dbo.Hulls h on h.HullID=sd.HullID
 	WHERE fd.FleetID = @FleetID
+	AND sd.UserID = @UserID
+	AND h.Hull >= 500
 
 	SELECT @Dis = SQRT( SQUARE(@PX-@FX) + SQUARE(@PY-@FY))
 
 	SET @Seconds = ROUND(@Dis/@Movement,0)
+	IF @Seconds < 30
+	BEGIN
+		SET @Seconds = 30
+	END
 
 	UPDATE dbo.Fleets
 	SET Destination = @PlanetID,

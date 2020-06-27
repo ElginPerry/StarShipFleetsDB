@@ -17,7 +17,9 @@ BEGIN
 		,fd.[UserID]
 		,fd.Movement
 		,sd.Colony
+		,h.Hull
 	FROM [dbo].[FleetDetails] fd
 	JOIN dbo.ShipDesigns sd on sd.ShipDesignID = fd.DesignID
+	JOIN dbo.Hulls h on h.HullID = sd.HullID
 	WHERE fd.FleetID = @FleetID
 END

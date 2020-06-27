@@ -17,6 +17,7 @@ SELECT [HullID]
       ,[TechLevel]
       ,[BuildingID]
       ,[BuildingLevel]
+	  ,[RequiresBay]
   FROM [dbo].[Hulls]
   Order by SortOrder
  
