@@ -116,5 +116,8 @@
     <Build Include="dbo\Stored Procedures\GetPlanetFleets.sql" />
     <Build Include="dbo\Stored Procedures\GetGalaxySystems.sql" />
     <Build Include="dbo\Stored Procedures\GetFleets.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateFleetDetails.sql" />
+    <Build Include="dbo\Stored Procedures\RemoveFleet.sql" />
+    <Build Include="dbo\Stored Procedures\CreateGalaxy2.sql" />
   </ItemGroup>
 </Project>
