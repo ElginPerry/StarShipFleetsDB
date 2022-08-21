@@ -119,7 +119,12 @@ BEGIN
 				SELECT @PlanetChk = (CAST(RAND() * 6 AS INT)+1)
 				WHILE @PlanetChk > 0
 				BEGIN
-					SELECT @Type = CAST(RAND() * 10 AS INT)	
+					SELECT @Type = CAST(RAND() * 21 AS INT)	
+					SELECT @Type = ROUND(@Type / 2, 0,0)
+					if @Type = 11
+						BEGIN
+							SET @Type = 2
+						END	
 					INSERT INTO @Planets
 					values
 					(
@@ -139,7 +144,12 @@ BEGIN
 					SELECT @MoonChk = (CAST(RAND() * 8 AS INT)-4)
 					WHILE @MoonChk > 0
 					BEGIN
-						SELECT @Type = CAST(RAND() * 10 AS INT)					
+						SELECT @Type = CAST(RAND() * 21 AS INT)	
+						SELECT @Type = ROUND(@Type / 2, 0,0)
+						if @Type = 11
+							BEGIN
+								SET @Type = 2
+							END					
 						INSERT INTO @Planets
 						values
 						(
